@@ -1,0 +1,127 @@
+
+.footer {
+	background-color: hsl(233, 26%, 24%);
+	color: hsl(0, 0%, 100%);
+}
+
+	.footerContainer {
+		margin: auto 140px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+		display: flex;
+		align-items: center;
+	}
+
+		.footer__social {
+			padding-right: 80px;
+		}
+			.footer__social--icons {
+				padding-top: 50px;
+				width: 170px;
+			}
+			.footer__social--icons img {
+				margin: 0 6px;
+				cursor: pointer;
+			}
+		
+		.footer__menu {
+			display: flex;
+		}
+			.footer__menu--one {
+				padding-right: 30px;
+			}
+			.footer__menu ul li {
+				list-style: none;
+				padding: 8px 8px;
+				width: 110px;
+				cursor: pointer;
+			}
+
+		.footer__menu--mobile {
+			display: none;
+		}
+		.footer__copyright {
+			display: flex;
+			flex-direction: column;
+			padding-left: 35%;
+			align-items: flex-end;
+		}
+			.footer__copyright p {
+				color: hsl(233, 8%, 62%);
+			}
+		
+			.btn {
+				border: none;
+				border-radius: 30px;
+				font-size: 1em;
+				font-weight: bold;
+				color: white;
+				background: hsl(136, 65%, 51%);
+				background: linear-gradient(90deg, hsl(136, 65%, 51%) 0%, hsl(192, 70%, 51%) 100%);
+				padding: 10px 25px 10px 25px;
+				cursor: pointer;
+				outline: none;
+				width: 180px;
+				height: 50px;
+			}
+			
+			.btn:hover {
+				background: linear-gradient(
+					90deg,
+					hsl(136, 68%, 44%) 0%,
+					hsl(192, 75%, 46%) 100%
+				);
+			}	
+
+
+
+
+@media (max-width: 1240px) {
+	.footer .footerContainer .footer__social {
+		padding-right: 0;
+	}
+
+	.footer .footerContainer .footer__menu {
+		display: none;
+	}
+	.footer .footerContainer .footer__copyright {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.footer .footerContainer {
+		flex-direction: column;
+	}
+
+	.footer .footerContainer .footer__social {
+		text-align: center;
+	}
+
+	.footer__social--icons {
+		padding: 15px 15px;
+	}
+
+	.footer .footerContainer .footer__menu--mobile {
+		display: block;
+		padding-bottom: 20px;
+	}
+
+	.footer__menu--mobile ul {
+		margin: 0;
+		padding: 0;
+	}
+	.footer__menu--mobile li {
+		list-style: none;
+		text-align: center;
+		padding-top: 8px;
+		cursor: pointer;
+	}
+
+	.footer .footerContainer {
+		margin: 0;
+	}
+
+	.footer__social--icons img {
+		margin: 5px;
+	}
+}

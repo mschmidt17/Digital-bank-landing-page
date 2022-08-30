@@ -1,0 +1,61 @@
+.header {
+	position: fixed;
+	z-index: 3;
+	height: 100px;
+	width: 100%;
+	background-color: hsl(0, 0%, 100%);
+}
+
+.headerContainer {
+	margin: auto 140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.headerContainer ul {
+	display: flex;
+}
+.headerContainer li {
+	list-style: none;
+	margin: 0 25px 0 25px;
+	color: hsl(233, 8%, 62%);
+}
+.headerContainer li:hover {
+	color: hsl(233, 26%, 24%);
+	cursor: pointer;
+}
+.header__hamburguer {
+	display: none;
+}
+
+.header__responsive--menu {
+	background-color:  hsl(0, 0%, 100%);
+	text-align: center;
+	width: 80%;
+	margin-top: 25px;
+	border-radius: 5px;
+	position: absolute;
+	left: 8%;
+	right: 0px;
+	z-index: 5;
+}
+.header__responsive--menu ul {
+	margin: 0;
+	padding: 0;
+}
+.header__responsive--menu li {
+	list-style: none;
+	padding: 16px 16px;
+	font-weight: 500;
+	color: hsl(233, 26%, 24%);
+	cursor: pointer;
+}
+.header__responsive--background {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, hsl(233, 26%, 24%) 0%, transparent 100%);
+	z-index: 4;
+}

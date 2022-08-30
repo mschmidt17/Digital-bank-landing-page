@@ -1,0 +1,36 @@
+.features {
+	background-color: hsl(220, 16%, 96%);
+}
+.featuresContainer {
+	margin: auto 140px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.features__title {
+	max-width: 600px;
+}
+.features__title h2 {
+	font-weight: 500;
+	font-size: 2em;
+}
+.features__title p {
+	color: hsl(233, 8%, 62%);
+}
+.features__items {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0;
+	padding-top: 35px;
+	flex-wrap: wrap;
+}
+.features__items--item {
+	width: 20%;
+}
+.features__items--item h3 {
+	font-weight: 500;
+}
+.features__items--item p {
+	color: hsl(233, 8%, 62%);
+}
